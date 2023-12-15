@@ -52,6 +52,16 @@ Gere a key do projeto Laravel
 php artisan key:generate
 ```
 
+Instale as dependencias do Vue
+```sh
+npm install
+```
+
+Inicia a aplicação Vue
+```sh
+npm run dev
+```
+
 
 Acesse o projeto
 [http://localhost:8989](http://localhost:8989)
