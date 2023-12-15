@@ -15,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //TODOS USUARIOS
-Route::get('/', [UserController::class, 'index'])->name('user.index');
+
+Route::get('/', function(){ return view ('master');});
+Route::get('/products', function(){ return view ('products');});
 Route::get('/user', [UserController::class, 'index'])->name('user.index');
 //View CRIAR NOVO
 Route::get('/user/create', [UserController::class, 'create'])->name('user.create');

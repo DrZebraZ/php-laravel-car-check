@@ -21,6 +21,7 @@ class UserEloquentORM implements UserRepositoryInterface{
                         $query->orWhere('email','like',"%{$filter}%");
                     }
                 })
+                ->orderBy('name')
                 ->paginate($totalPerPage, ['*'], 'page', $page);
         return new PaginationPresenter($users);
     }
